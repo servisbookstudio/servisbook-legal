@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<!-- saved from url=(0253)https://d5ffaf2f-f377-4849-bf3c-b9c0cc96982e.frame.claudeusercontent.com/_f/1785606287-824d/?__frame_t=9cft8FuYttyysBFMVEw0CjyX.47ec37fe-d5bc-4605-b0ef-02e222a835fd.4c9a23d7-c3ee-480d-9808-fa37235fb118.1785609890&__frame_v=manifest.ec369d2e020e53f6.json -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- frame-runtime --><!--<base href="/_f/1785606287-824d/">--><base href="."><script>window.__FRAME_PREAMBLE={"capabilities":{"downloads":"downloads.BABDwU1K.js","mcp":"mcp.hoz5jxDa.js","permissions":"permissions.ByA9Fd8x.js","self":"self.D3u1zjZe.js","user":"user.Cp1-RnjB.js"},"transforms":"_transforms.DYk1Ltlh.js","comments":"_comments.DiwQajF_.js","translate":"_translate.C5leZL2A.js"}</script><script>(function(){"use strict";const Ee="modulepreload",we=function(e){return"/"+e},Se={},ee=function(t,n,l){let i=Promise.resolve();function s(f){const c=new Event("vite:preloadError",{cancelable:!0});if(c.payload=f,window.dispatchEvent(c),!c.defaultPrevented)throw f}return i.then(f=>{for(const c of f||[])c.status==="rejected"&&s(c.reason);return t().catch(s)})},te=["light","dark","system"];function ne(e){if(e===null||typeof e!="object")return!1;const t=e.__frame_init;return t!==null&&typeof t=="object"}function W(e){return e!==null&&typeof e=="object"&&e.__frame_size_poke===!0}function re(e){if(e===null||typeof e!="object")return!1;const t=e.__frame_theme;if(t===null||typeof t!="object")return!1;const n=t.theme;return typeof n=="string"&&te.includes(n)}function se(e){try{typeof reportError=="function"?reportError(e):setTimeout(()=>{throw e},0)}catch{}}const oe=Object.freeze(Object.assign(Object.create(null),{user:Object.freeze(Object.assign(Object.create(null),{id:null,isOwner:!1,canEdit:!1,name:null,avatarUrl:null,email:null}))}));function Y(e){if(window===top||e.type==="auxclick"&&e.button!==1)return;const t=e.composedPath?e.composedPath():[e.target];let n=null;for(let f=0;f<t.length;f++){const c=t[f];if(c&&c.matches&&c.matches("a[href],area[href]")){n=c;break}}if(!n&&e.target&&e.target.closest&&(n=e.target.closest("a[href],area[href]")),!n)return;const l=n.getAttribute("href");if(!l)return;let i,s;try{i=new URL(l,document.baseURI),s=new URL(document.baseURI).origin}catch{return}(i.protocol==="http:"||i.protocol==="https:")&&i.origin!==s&&(e.preventDefault(),parent.postMessage({__frame_nav:!0,url:i.href},"*"))}const K={};function D(e){if(window===top)return;const t=Date.now();t-(K[e]||0)<500||(K[e]=t,parent.postMessage({__frame_engaged:!0,kind:e},"*"))}const ie=2e3,x=["wheel","touchstart","touchmove","keydown","pointerdown"];let J=0;function ae(e){e.isTrusted&&(J=Date.now())}function ce(){addEventListener("click",Y,!0),addEventListener("auxclick",Y,!0)}function le(){for(let e=0;e<x.length;e++)addEventListener(x[e],ae,{capture:!0,passive:!0});addEventListener("scroll",e=>{e.isTrusted&&Date.now()-J<ie&&D("scroll")},{capture:!0,passive:!0}),addEventListener("pointermove",e=>{e.isTrusted&&D("pointer")},{capture:!0,passive:!0}),addEventListener("click",e=>{e.isTrusted&&D("click")},{capture:!0,passive:!0})}const I="__frame_scroll",ue=150,fe=310,de=160,me=3e4;function pe(){let e=0,t=!1,n=!1,l=!1,i=0;const s=a=>{try{sessionStorage.setItem(I,JSON.stringify({y:a}))}catch{}},f=()=>{if(t){t=!1;return}n=!0,clearTimeout(e),e=setTimeout(()=>s(scrollY),ue)};try{addEventListener("scroll",f,{passive:!0}),addEventListener("pagehide",()=>{clearTimeout(e),s(scrollY)})}catch{}const c=()=>{let a;try{a=sessionStorage.getItem(I)}catch{return null}if(a===null)return null;let _;try{_=JSON.parse(a)}catch{_=null}const m=_?.y;if(!(typeof m=="number"&&Number.isFinite(m)&&m>=0)){try{sessionStorage.removeItem(I)}catch{}return null}return m};let g=!1;const p=a=>{try{const _=scrollY;scrollTo({top:a,left:0,behavior:"instant"}),i=a,l=!0,s(a);const m=scrollY;m!==_&&(t=!0),m!==a&&!g&&(g=!0,addEventListener("load",()=>{try{if(scrollY===m){const y=c();p(y!==null?y:i)}}catch{}},{once:!0}))}catch{}},o=()=>{try{return!!location.hash}catch{return!0}};let u=!1;const d=()=>{try{if(u||innerWidth>fe||innerHeight>de)return;u=!0;const a=Date.now(),_=()=>{try{removeEventListener("resize",_)}catch{}if(Date.now()-a>me||n||o())return;const m=c();p(m!==null?m:i)};addEventListener("resize",_)}catch{}};let h=!1,b=!1;return{restore(){if(h||(h=!0,o()))return;const a=c();a!==null&&(p(a),d())},promoted(){if(b||(b=!0,o()))return;const a=c();a!==null?(p(a),d()):l&&p(i)}}}function he(e,t,n){const l=[...t.values()].filter(i=>i.targets.some(s=>s.startsWith(e+".")));return{wrap(i,s){const f=`${e}.${i}`,c=l.filter(g=>g.targets.includes(f));return c.length===0?(...g)=>{try{return s(...g)}catch(p){return Promise.reject(p)}}:(...g)=>{let p=g;for(const u of c){const d=u.module.parameters;if(d)try{p=d(p)}catch{return Promise.reject({code:"transform_error",id:u.id,scope:e,message:"parameters transform failed"})}}let o;try{o=s(...p)}catch(u){o=Promise.reject(u)}return o.then(u=>{for(let d=c.length-1;d>=0;d--){const h=c[d],b=h.module.returns;if(b)try{u=b(u)}catch{return n({id:h.id,scope:e,leg:"returns"}),u}}return u},u=>{for(let d=c.length-1;d>=0;d--){const h=c[d],b=h.module.throws;if(b)try{u=b(u)}catch{return n({id:h.id,scope:e,leg:"throws"}),Promise.reject(u)}}return Promise.reject(u)})}}}}function ge(e,t,n,l=()=>{}){const i=new Set(e.changes??[]),s=new Map;for(const f of i){const c=t[f];c&&s.set(f,c)}return{contract:e.contract,changes:i,flags:new Set(e.flags??[]),capabilities:e.capabilities??{},capBudgets:e.capBudgets??{},transforms:s,shellOrigin:n.shellOrigin,mount:n.mount,pipe:f=>he(f,s,l)}}(function(){const e=Object.defineProperty,t=globalThis,n=["RTCPeerConnection","webkitRTCPeerConnection","RTCDataChannel","RTCIceCandidate","RTCSessionDescription","RTCRtpSender","RTCRtpReceiver"];let l=0;for(let i=0;i<n.length;i++){const s=n[i];try{e(t,s,{value:void 0,writable:!1,configurable:!1})}catch{try{delete t[s]}catch{}try{e(t,s,{value:void 0,writable:!1,configurable:!0})}catch{}}typeof t[s]=="function"&&l++}if(l&&window!==top)try{parent.postMessage({__frame_rtc_lockdown_failed:l},"*")}catch{}})();const _e=1e4,ye=Object.freeze([...window.__FRAME_PREAMBLE?.origins??["https://claude.ai","https://preview.claude.ai"]]);function G(e){for(const t of ye)if(t.endsWith(":*"))try{const n=new URL(e);if(`${n.protocol}//${n.hostname}:*`===t)return!0}catch{}else if(e===t)return!0;return!1}const R=Object.freeze({...window.__FRAME_PREAMBLE?.capabilities}),U=window.__FRAME_PREAMBLE?.transforms,z=window.__FRAME_PREAMBLE?.comments,$=window.__FRAME_PREAMBLE?.translate,T=/^[\w.-]+\.js$/,be=/^[a-z][a-z0-9_-]{0,63}$/;let V=null,j=null;function q(e,t,n){try{Object.defineProperty(e,t,{value:n,writable:!1,configurable:!1,enumerable:!0})}catch{try{Object.defineProperty(e,t,{value:n,writable:!1,configurable:!0,enumerable:!0})}catch{}}}let B=!1;function X(e){const t=document.documentElement;e==="light"||e==="dark"?(t.dataset.theme=e,t.style.colorScheme=e,B=!0):B&&(delete t.dataset.theme,t.style.colorScheme="",B=!1)}const A=Object.assign(Object.create(null),{mcp:Object.assign(Object.create(null),{watchTool:{handlerArg:3}})}),M=new Map;function Q(e,t){const n=M.get(e);if(!n)return;const l=Object.assign(Object.create(null),t);Object.assign(n.impl,l),n.impl.__settled=()=>Promise.reject({code:"capability_removed",message:`${e}: method not in this runtime`});const i=n.queue;n.queue=[];for(const s of i){const f=l[s.method];if(f)if(A[e]?.[s.method])try{s.resolve(f(...s.args))}catch{k(s,A[e][s.method].handlerArg,{code:"transform_error",message:`${e}.${s.method} rejected its arguments`})}else f(...s.args).then(s.resolve,s.reject);else{const c={code:"capability_removed",message:`${e}.${s.method} is not in this runtime`},g=A[e]?.[s.method];if(g){k(s,g.handlerArg,c);continue}s.reject(c)}}}function ve(e,t){const n=M.get(e);if(!n)return;n.impl.__settled=()=>Promise.reject(t);const l=n.queue;n.queue=[];for(const i of l){const s=A[e]?.[i.method];if(s){k(i,s.handlerArg,t);continue}i.reject(t)}}function N(e,t){const n=oe[e];if(!n){ve(e,t);return}Q(e,Object.fromEntries(Object.entries(n).map(([l,i])=>[l,()=>Promise.resolve(i)])))}function k(e,t,n){if(e.syncState?.dead)return;const l=e.args[t];typeof l=="function"&&queueMicrotask(()=>{if(!e.syncState?.dead)try{l({type:"error",error:n})}catch(i){se(i)}})}const F=Object.getOwnPropertyDescriptor(window,"claude");if(window!==top&&!(F&&F.writable===!1)){ce(),le();let e=null;try{e=pe()}catch{}const t=F?.value??{};q(window,"claude",t);const n=o=>{const u={impl:Object.create(null),queue:[]};M.set(o,u);const d=u.impl,h=new Proxy(d,{get:(b,a)=>{if(typeof a!="string"||a==="then"||a==="toJSON"||a==="valueOf")return;if(a==="toString")return Object.prototype.toString;const _=A[o]?.[a];return _?(...m)=>{if(typeof m[_.handlerArg]!="function")throw new TypeError(`${o}.${a} requires a handler function`);const y=d[a];if(y)return y(...m);if(d.__settled){const v={dead:!1},P={args:[...m],syncState:v};return d.__settled().catch(C=>k(P,_.handlerArg,C)),()=>{v.dead=!0}}let E=null;const S={dead:!1};return u.queue.push({method:a,args:m,resolve:v=>{E=typeof v=="function"?v:null,S.dead&&E?.()},reject:()=>{},syncState:S}),()=>{S.dead=!0,E?.()}}:(...m)=>{const y=d[a]??d.__settled;return y?y(...m):new Promise((E,S)=>{u.queue.push({method:a,args:m,resolve:E,reject:S})})}},set:()=>!1});q(t,o,h)};for(const o of Object.keys(R)){if(t[o]!==void 0){q(t,o,t[o]);continue}n(o)}let l=null,i=null,s=0;const f=o=>{o.source!==parent||!G(o.origin)||ne(o.data)&&(l=o.data.__frame_init,j=o.origin,removeEventListener("message",f),clearTimeout(s),i?.())};addEventListener("message",f),parent.postMessage({__frame_connect:!0},"*");const c=new Promise(o=>{i=o,s=setTimeout(()=>{removeEventListener("message",f),o()},_e)}),g=document.readyState==="loading"?new Promise(o=>document.addEventListener("DOMContentLoaded",()=>o(),{once:!0})):Promise.resolve();g.then(()=>{try{e?.restore()}catch{}});const p=o=>{if(!(o.source!==parent||!G(o.origin))&&W(o.data)){removeEventListener("message",p);try{e?.promoted()}catch{}}};addEventListener("message",p),c.then(async()=>{if(!l||!j){for(const r of M.keys())N(r,{code:"not_granted",message:"frame initialization did not arrive - capability unavailable"});return}X(l.theme);const o=j;let u=!1,d=!1;addEventListener("message",r=>{if(r.source!==parent||r.origin!==o)return;re(r.data)&&X(r.data.__frame_theme.theme);const w=r.data?.__fc_mode;w&&typeof w=="object"&&!u&&z&&T.test(z)&&(u=!0,h(z).then(H=>H.install?.(o,w.on===!0)).catch(()=>{}));const O=r.data?.__ft_cmd;O&&typeof O=="object"&&!d&&$&&T.test($)&&(d=!0,h($).then(H=>H.install?.(o,O)).catch(()=>{}))});const h=r=>ee(()=>import("/_runtime/"+r),void 0),b=Object.keys(l.capabilities??{});for(const r of b)Object.hasOwn(R,r)||be.test(r)&&t[r]===void 0&&(n(r),N(r,{code:"capability_disabled",message:"capability not in this runtime generation"}));const a=b.filter(r=>Object.hasOwn(R,r)).map(r=>[r,R[r]]).filter(r=>typeof r[1]=="string"&&T.test(r[1])),[_,...m]=await Promise.allSettled([U&&T.test(U)?h(U):Promise.resolve({}),...a.map(([,r])=>h(r))]),y=j;V=ge(l,_.status==="fulfilled"&&_.value?.TRANSFORMS||{},{shellOrigin:y,mount:Q},r=>parent.postMessage({__frame_cap_telemetry:r},y));const E=r=>parent.postMessage({__frame_cap_telemetry:{kind:"cap-load-error",cap:r}},y),S=V;m.forEach((r,w)=>{const O=a[w][0];if(r.status!=="fulfilled"){E(O);return}try{r.value?.install?.(S)}catch{E(O)}});for(const[r,w]of M)if(!(w.queue.length===0&&Object.keys(w.impl).length>0)){if(b.includes(r)){N(r,{code:"capability_disabled",message:"capability not available in this session"});continue}N(r,{code:"not_granted",message:"capability not available in this session"})}await g,parent.postMessage({__frame_ready:!0},j);let v=-1,P=0;const C=()=>{P=0;const r=Math.max(document.documentElement.scrollHeight,document.body?document.body.scrollHeight:0);r!==v&&(v=r,parent.postMessage({__frame_size:!0,h:r},y))},L=()=>{P||(P=setTimeout(C,200))},Z=new ResizeObserver(L);Z.observe(document.documentElement),document.body&&Z.observe(document.body),document.addEventListener("load",L,!0),document.fonts?.ready.then(L,()=>{}),addEventListener("beforeprint",()=>{v=-1,C()}),L(),addEventListener("message",r=>{if(!(r.source!==parent||r.origin!==y)&&W(r.data)){try{e?.promoted()}catch{}v=-1,L()}})})}})();</script><!-- /frame-runtime --><meta name="viewport" content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}</style></head><body>
+<title>ServisBook — End User Licence Agreement (EULA)</title>
+<style>
+  :root {
+    --bg: #ffffff; --text: #1a2333; --muted: #4a5568; --border: #e2e8f0;
+    --accent: #1565C0; --surface: #f7fafc; --heading: #0d1f3c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0f1923; --text:#dde8f4; --muted:#7a9ab5; --border:#253548;
+      --accent:#5b9cf6; --surface:#17263a; --heading:#eaf2ff; }
+  }
+  :root[data-theme="light"] { --bg:#ffffff; --text:#1a2333; --muted:#4a5568; --border:#e2e8f0; --accent:#1565C0; --surface:#f7fafc; --heading:#0d1f3c; }
+  :root[data-theme="dark"]  { --bg:#0f1923; --text:#dde8f4; --muted:#7a9ab5; --border:#253548; --accent:#5b9cf6; --surface:#17263a; --heading:#eaf2ff; }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.75; font-size: 15px; padding: 0 0 80px; }
+
+  .page-header { background: #0D47A1; color: white; padding: 40px 32px 36px; }
+  .page-header .app-name { font-size: 12px; font-weight: 600; letter-spacing: 0.1em;
+    text-transform: uppercase; opacity: 0.65; margin-bottom: 8px; }
+  .page-header h1 { font-size: 26px; font-weight: 700; line-height: 1.2; }
+  .page-header .meta { margin-top: 10px; font-size: 13px; opacity: 0.65; }
+
+  article { max-width: 760px; margin: 0 auto; padding: 36px 24px 0; }
+
+  .warning-box { background: #fff8e1; border: 1px solid #ffe082; border-left: 4px solid #f9a825;
+    border-radius: 0 8px 8px 0; padding: 14px 18px; font-size: 14px; margin-bottom: 28px;
+    color: #5f4200; font-weight: 600; }
+  :root[data-theme="dark"] .warning-box, @media (prefers-color-scheme: dark) { }
+
+  .licensor-box { background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; padding: 18px 22px; margin: 14px 0 24px; font-size: 14px; }
+  .licensor-box p { margin-bottom: 4px; }
+  .licensor-box .label { color: var(--muted); font-size: 12px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
+  .placeholder { background: #fff3cd; color: #856404; padding: 1px 6px; border-radius: 4px;
+    font-size: 13px; font-style: italic; }
+  :root[data-theme="dark"] .placeholder { background: #3d2e00; color: #ffc107; }
+
+  .gdpr-note { background: var(--surface); border: 1px dashed var(--border);
+    border-radius: 8px; padding: 12px 16px; font-size: 13px; color: var(--muted);
+    margin: 14px 0; }
+
+  section { margin-bottom: 32px; }
+  h2 { font-size: 17px; font-weight: 700; color: var(--heading); margin-bottom: 12px;
+    padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+  h3 { font-size: 14px; font-weight: 700; color: var(--heading); margin: 14px 0 6px; }
+  p { font-size: 14px; margin-bottom: 10px; }
+  p:last-child { margin-bottom: 0; }
+  ol, ul { padding-left: 20px; margin: 8px 0 10px; display: flex; flex-direction: column; gap: 5px; }
+  li { font-size: 14px; }
+  .sub-item { list-style-type: lower-alpha; }
+  .clause { margin-bottom: 10px; font-size: 14px; }
+  .clause-num { font-weight: 600; margin-right: 4px; }
+  strong { font-weight: 700; }
+
+  .toc { background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 18px 22px; margin-bottom: 28px; }
+  .toc-title { font-size: 12px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.08em; color: var(--muted); margin-bottom: 10px; }
+  .toc ol { padding-left: 18px; gap: 3px; }
+  .toc li { font-size: 13px; color: var(--muted); }
+
+  .contact-box { background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; padding: 18px 22px; margin-top: 10px; font-size: 14px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  hr { border: none; border-top: 1px solid var(--border); margin: 20px 0; }
+</style>
+
+<div class="page-header">
+  <div class="app-name">ServisBook</div>
+  <h1>End User Licence Agreement (EULA)</h1>
+  <div class="meta">Version 1.0 &nbsp;·&nbsp; Effective date: August 1, 2026 &nbsp;·&nbsp; Last updated: August 1, 2026</div>
+</div>
+
+<article>
+
+  <div class="warning-box">
+    IMPORTANT — READ CAREFULLY<br>
+    <span style="font-weight:400;font-size:13px">By downloading, installing, accessing or using the App, you confirm that you have read, understood and accepted this Agreement. If you do not agree, do not install or use the App, and remove it from your devices.</span>
+  </div>
+
+  <div class="warning-box" style="background:var(--surface);border-color:var(--border);border-left-color:var(--accent);color:var(--text);font-weight:400;font-size:13px">
+    THE APP IS PROVIDED FOR BUSINESS USE ONLY. It is not intended for consumers or for personal, family or household purposes.
+  </div>
+
+  <!-- LICENSOR INFO -->
+  <div class="licensor-box">
+    <div class="label">Licensor &amp; Trader Contact Information</div>
+    <p><strong>Legal name:</strong> Branislav Krstić</p>
+    <p><strong>Address:</strong> Ulica Ljubomira Kovačevića 012, Pančevo, Republic of Serbia</p>
+    <p><strong>E-mail:</strong> <a href="mailto:servisbook.studio@gmail.com">servisbook.studio@gmail.com</a></p>
+    <!--<p><strong>Website:</strong> <span class="placeholder">[WEBSITE — to be added]</span></p>--!>
+    <hr>
+    <p style="font-size:13px;color:var(--muted)">This information is provided in accordance with Articles 30 and 31 of Regulation (EU) 2022/2065 (Digital Services Act) and is published on the App's store listing.</p>
+  </div>
+
+  <div class="gdpr-note">
+    <strong>EU GDPR Representative (Article 27):</strong> Under assessment — this block will be updated or removed once it is confirmed whether an EU representative is required under Article 27(2) GDPR for this App.
+  </div>
+
+  <!-- TABLE OF CONTENTS -->
+  <div class="toc">
+    <div class="toc-title">Contents</div>
+    <ol>
+      <li>Definitions</li><li>Business Use and Eligibility</li><li>Scope of the App</li>
+      <li>Licence Grant</li><li>Restrictions</li><li>Account and Security</li>
+      <li>Customer Data and Local Storage</li><li>Data Protection</li>
+      <li>Updates, Changes and Support</li><li>Subscriptions and Payment</li>
+      <li>Intellectual Property</li><li>Third-Party and Open Source Components</li>
+      <li>Disclaimer of Warranties</li><li>Limitation of Liability</li>
+      <li>Indemnity</li><li>Term and Termination</li><li>Changes to This Agreement</li>
+      <li>General</li><li>Contact</li>
+    </ol>
+  </div>
+
+  <!-- 1 -->
+  <section>
+    <h2>1. Definitions</h2>
+    <p><span class="clause-num">1.1.</span> <strong>"App"</strong> means the ServisBook software application, including all object code, user interfaces, graphics, documentation, updates, upgrades, patches and accompanying materials.</p>
+    <p><span class="clause-num">1.2.</span> <strong>"Customer Data"</strong> means all data, records, text, images, documents and other materials that you enter into, upload to or generate within the App, including records relating to your own clients, services, appointments and finances.</p>
+    <p><span class="clause-num">1.3.</span> <strong>"App Store"</strong> means Google Play, or any other distribution platform through which the App is officially distributed.</p>
+    <p><span class="clause-num">1.4.</span> <strong>"Device"</strong> means a mobile phone, tablet or other compatible device on which the App is installed.</p>
+    <p><span class="clause-num">1.5.</span> <strong>"Premium Subscription"</strong> means the paid tier granting access to extended functionality.</p>
+    <p><span class="clause-num">1.6.</span> <strong>"GDPR"</strong> means Regulation (EU) 2016/679 (General Data Protection Regulation), together with any equivalent or successor legislation applicable to you.</p>
+  </section>
+
+  <!-- 2 -->
+  <section>
+    <h2>2. Business Use and Eligibility</h2>
+    <p><span class="clause-num">2.1.</span> The App is designed for service businesses, tradespeople, repair shops, craftspeople and other professional service providers.</p>
+    <p><span class="clause-num">2.2.</span> By accepting this Agreement you represent and warrant that:</p>
+    <ol class="sub-item">
+      <li>you are at least 18 years of age and have full legal capacity;</li>
+      <li>you are using the App for purposes relating to your trade, business, craft or profession, and therefore not as a consumer;</li>
+      <li>where you accept this Agreement on behalf of a legal entity, you have authority to bind that entity.</li>
+    </ol>
+    <p><span class="clause-num">2.3.</span> Nothing in this Agreement excludes or limits any right you may have under mandatory law that cannot lawfully be excluded or limited. Where a provision of this Agreement conflicts with such mandatory law, that law prevails to the minimum extent necessary.</p>
+  </section>
+
+  <!-- 3 -->
+  <section>
+    <h2>3. Scope of the App</h2>
+    <p><span class="clause-num">3.1.</span> The App enables you to:</p>
+    <ul>
+      <li>maintain records of your clients;</li>
+      <li>record completed and planned services;</li>
+      <li>schedule and manage appointments;</li>
+      <li>receive and issue reminders and notifications;</li>
+      <li>keep basic financial records;</li>
+      <li>generate reports and business overviews;</li>
+      <li>create and restore backups of your data.</li>
+    </ul>
+    <p><span class="clause-num">3.2.</span> The App is not accounting, invoicing, fiscalisation or tax-compliance software. It does not replace any software or record-keeping system that may be prescribed by law in your jurisdiction. You remain solely responsible for meeting your own statutory bookkeeping, invoicing, fiscal and tax obligations.</p>
+    <p><span class="clause-num">3.3.</span> The App does not provide legal, tax, accounting or other professional advice.</p>
+    <p><span class="clause-num">3.4.</span> You are responsible for determining whether the App is suitable and lawful for use in your jurisdiction and for your intended purpose.</p>
+  </section>
+
+  <!-- 4 -->
+  <section>
+    <h2>4. Licence Grant</h2>
+    <p><span class="clause-num">4.1.</span> Subject to your compliance with this Agreement, the Licensor grants you a limited, personal, non-exclusive, non-transferable, non-sublicensable, revocable licence to install and use the App on Devices owned or controlled by you, solely for your own internal business purposes.</p>
+    <p><span class="clause-num">4.2.</span> The App is licensed, not sold. The Licensor and its licensors retain all rights not expressly granted. No ownership in the App is transferred to you.</p>
+  </section>
+
+  <!-- 5 -->
+  <section>
+    <h2>5. Restrictions</h2>
+    <p><span class="clause-num">5.1.</span> You shall not, and shall not permit any third party to:</p>
+    <ol class="sub-item">
+      <li>copy, reproduce, distribute, sell, rent, lease, lend, assign, sublicense or otherwise make the App available to third parties;</li>
+      <li>reverse engineer, decompile or disassemble the App, or otherwise attempt to derive its source code, except to the extent such restriction is expressly prohibited by mandatory law;</li>
+      <li>modify, adapt, translate or create derivative works based on the App;</li>
+      <li>remove, alter or obscure any copyright notice, trade mark or other proprietary notice;</li>
+      <li>circumvent, disable or interfere with any security or licence-verification mechanism, including subscription entitlement checks;</li>
+      <li>use the App to develop a competing product or service, or publish benchmarking results without our prior written consent;</li>
+      <li>use automated systems, bots, scrapers or similar tools to access the App or extract data from it;</li>
+      <li>use the App in any manner that is unlawful, fraudulent, or infringes the rights of any third party.</li>
+    </ol>
+  </section>
+
+  <!-- 6 -->
+  <section>
+    <h2>6. Account and Security</h2>
+    <p><span class="clause-num">6.1.</span> Certain functionality may require a user account. You shall provide accurate, complete and current information.</p>
+    <p><span class="clause-num">6.2.</span> You are solely responsible for maintaining the confidentiality of your credentials (username, password, PIN, biometric access) and for all activity carried out through your account.</p>
+    <p><span class="clause-num">6.3.</span> You shall notify us without undue delay of any unauthorised access to your account or suspected security breach.</p>
+    <p><span class="clause-num">6.4.</span> Because Customer Data is stored locally on your Device (see Clause 7), the Licensor cannot restore, recover or reset access to that data.</p>
+  </section>
+
+  <!-- 7 -->
+  <section>
+    <h2>7. Customer Data and Local Storage</h2>
+    <p><span class="clause-num">7.1.</span> <strong>LOCAL STORAGE.</strong> Customer Data is stored exclusively locally on your Device. The App does not transmit Customer Data to the Licensor, and the Licensor has no access to it, no ability to read, retrieve, restore or delete it, and no copy of it.</p>
+    <p><span class="clause-num">7.2.</span> <strong>OWNERSHIP.</strong> You retain all rights in Customer Data. This Agreement transfers no ownership in Customer Data to the Licensor.</p>
+    <p><span class="clause-num">7.3.</span> <strong>RESPONSIBILITY.</strong> You are solely responsible for the accuracy, legality, quality and lawful use of Customer Data, and for having all rights and permissions necessary to process it.</p>
+    <p><span class="clause-num">7.4.</span> <strong>NO REVIEW.</strong> The Licensor does not review, moderate, monitor or verify Customer Data and accepts no responsibility for it.</p>
+    <p><span class="clause-num">7.5.</span> <strong>BACKUPS.</strong> You are solely responsible for creating regular backups using the App's backup function (Settings → Backup) and for storing those backups securely. Because Customer Data resides only on your Device, deletion of the App, device loss, theft, damage, reset, replacement or failure will result in permanent and irrecoverable loss of Customer Data unless you hold a backup.</p>
+  </section>
+
+  <!-- 8 -->
+  <section>
+    <h2>8. Data Protection</h2>
+    <p><span class="clause-num">8.1.</span> <strong>YOUR ROLE.</strong> Where you enter personal data relating to your own clients (names, contact details, addresses, service history, photographs, financial records and similar) into the App, you act as the controller of that personal data within the meaning of the GDPR and equivalent applicable law.</p>
+    <p><span class="clause-num">8.2.</span> <strong>NO CONTROLLER OR PROCESSOR RELATIONSHIP.</strong> Because Customer Data never leaves your Device and the Licensor has no access to it, the Licensor does not process that personal data on your behalf and is neither a controller nor a processor in respect of it. Accordingly, no data processing agreement under Article 28 GDPR is required or entered into in respect of Customer Data.</p>
+    <p><span class="clause-num">8.3.</span> <strong>YOUR OBLIGATIONS.</strong> You are solely responsible for:</p>
+    <ol class="sub-item">
+      <li>establishing a valid legal basis for processing your clients' personal data;</li>
+      <li>providing the information required under Articles 13 and 14 GDPR to the individuals concerned;</li>
+      <li>obtaining consent where consent is the applicable legal basis;</li>
+      <li>responding to data subject requests (access, rectification, erasure, restriction, portability, objection);</li>
+      <li>applying the principles of data minimisation and storage limitation;</li>
+      <li>notifying personal data breaches to the competent supervisory authority and to affected individuals where required;</li>
+      <li>implementing appropriate technical and organisational measures on your Device, including device encryption, screen lock and access controls.</li>
+    </ol>
+    <p><span class="clause-num">8.4.</span> <strong>SPECIAL CATEGORIES.</strong> You shall not enter special categories of personal data within the meaning of Article 9 GDPR (including health, religious, political, biometric or genetic data), or data relating to criminal convictions under Article 10 GDPR, unless you have a valid legal basis and have implemented all safeguards required by law.</p>
+    <p><span class="clause-num">8.5.</span> <strong>LICENSOR PROCESSING.</strong> The Licensor acts as a controller only in respect of the limited data it processes directly, such as subscription status, technical diagnostics and crash reports. This processing is described in the Privacy Policy available at <span class="placeholder"><a href="https://servisbookstudio.github.io/servisbook-legal/">this link</a></span> and within the App, which forms an integral part of this Agreement.</p>
+    <p><span class="clause-num">8.6.</span> <strong>INTERNATIONAL TRANSFERS.</strong> The Licensor is established in the Republic of Serbia. Any transfer of personal data described in Clause 8.5 is carried out on the basis of appropriate safeguards under Chapter V GDPR, as set out in the Privacy Policy.</p>
+  </section>
+
+  <!-- 9 -->
+  <section>
+    <h2>9. Updates, Changes and Support</h2>
+    <p><span class="clause-num">9.1.</span> We may issue updates to correct defects, improve security or add functionality. Some updates may be mandatory for continued use of the App.</p>
+    <p><span class="clause-num">9.2.</span> We may modify, limit or discontinue individual features. Where a change materially reduces core functionality, we will give advance notice wherever reasonably practicable.</p>
+    <p><span class="clause-num">9.3.</span> The App requires a compatible Device and operating system version. We do not warrant continued compatibility with all devices or operating system versions.</p>
+    <p><span class="clause-num">9.4.</span> Support is provided by e-mail at <a href="mailto:servisbook.studio@gmail.com">servisbook.studio@gmail.com</a> within a reasonable time during normal business hours. Support does not include training, customisation, or recovery of lost data (which is technically impossible under Clause 7.1).</p>
+  </section>
+
+  <!-- 10 -->
+  <section>
+    <h2>10. Subscriptions and Payment</h2>
+    <p><span class="clause-num">10.1.</span> The App is available in a free tier with limited functionality and as a Premium Subscription with extended functionality.</p>
+    <p><span class="clause-num">10.2.</span> Current prices, subscription periods and included features are displayed in the App or the App Store before purchase is confirmed. Prices are stated inclusive of applicable taxes unless expressly indicated otherwise.</p>
+    <p><span class="clause-num">10.3.</span> All payments are processed exclusively through the App Store. The Licensor does not collect or process your payment card details. App Store terms and policies apply to all transactions.</p>
+    <p><span class="clause-num">10.4.</span> <strong>AUTOMATIC RENEWAL.</strong> Subscriptions renew automatically at the end of each subscription period at the then-current price, unless cancelled at least 24 hours before the end of the current period through your App Store account settings. Charges are applied within 24 hours before the start of the new period.</p>
+    <p><span class="clause-num">10.5.</span> <strong>CANCELLATION.</strong> You may cancel automatic renewal at any time. Cancellation takes effect at the end of the current paid period, during which you retain access to Premium functionality. Deleting the App from your Device does not cancel a subscription.</p>
+    <p><span class="clause-num">10.6.</span> <strong>FREE TRIALS.</strong> Where a free trial is offered, it converts automatically into a paid subscription at the end of the trial period unless cancelled beforehand. Trial eligibility may be limited to one per account.</p>
+    <p><span class="clause-num">10.7.</span> <strong>REFUNDS.</strong> Refund requests are handled in accordance with App Store policies. The Licensor is not technically able to issue refunds for amounts collected by the App Store.</p>
+    <p><span class="clause-num">10.8.</span> <strong>PRICE CHANGES.</strong> We may change prices. Where a change affects an existing subscription, we will give at least 30 days' advance notice, and you may cancel before the new price takes effect.</p>
+    <p><span class="clause-num">10.9.</span> <strong>FAILED PAYMENT.</strong> If a renewal payment fails, access to Premium functionality may be suspended. Customer Data remains stored locally on your Device, but certain features may become unavailable.</p>
+  </section>
+
+  <!-- 11 -->
+  <section>
+    <h2>11. Intellectual Property</h2>
+    <p><span class="clause-num">11.1.</span> The App, its source code, design, user interface, graphics, databases and documentation, together with the name ServisBook and its logo, are the intellectual property of the Licensor or its licensors and are protected by copyright, trade mark and other laws.</p>
+    <p><span class="clause-num">11.2.</span> You may not use the Licensor's name, logo or other marks without prior written consent.</p>
+    <p><span class="clause-num">11.3.</span> <strong>FEEDBACK.</strong> If you submit suggestions, ideas or feedback regarding the App, you grant the Licensor an unrestricted, perpetual, royalty-free right to use them without obligation of compensation or attribution.</p>
+  </section>
+
+  <!-- 12 -->
+  <section>
+    <h2>12. Third-Party and Open Source Components</h2>
+    <p><span class="clause-num">12.1.</span> The App may include third-party components, including open source software, subject to their own licence terms. In the event of conflict, those licence terms prevail in respect of the relevant components. A list of components is available in the App (Settings → About).</p>
+  </section>
+
+  <!-- 13 -->
+  <section>
+    <h2>13. Disclaimer of Warranties</h2>
+    <p><span class="clause-num">13.1.</span> THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.</p>
+    <p><span class="clause-num">13.2.</span> To the maximum extent permitted by law, the Licensor disclaims all implied warranties, including warranties of merchantability, fitness for a particular purpose, satisfactory quality, accuracy and non-infringement.</p>
+    <p><span class="clause-num">13.3.</span> We do not warrant that:</p>
+    <ol class="sub-item">
+      <li>the App will operate uninterrupted, timely, secure or error-free;</li>
+      <li>all defects will be corrected;</li>
+      <li>the App will meet your specific business requirements or expectations;</li>
+      <li>results, reports or calculations generated by the App will be free of error.</li>
+    </ol>
+    <p><span class="clause-num">13.4.</span> This Clause does not exclude liability that cannot be excluded under mandatory law, nor liability for wilful misconduct or gross negligence.</p>
+  </section>
+
+  <!-- 14 -->
+  <section>
+    <h2>14. Limitation of Liability</h2>
+    <p><span class="clause-num">14.1.</span> To the maximum extent permitted by law, the Licensor shall not be liable for:</p>
+    <ol class="sub-item">
+      <li>loss, corruption or unavailability of Customer Data, including loss resulting from deletion or uninstallation of the App, device reset, failure, loss, theft, damage, replacement or sale, in each case where no backup exists;</li>
+      <li>loss of profit, business opportunity, goodwill or business relationships;</li>
+      <li>business interruption or the cost of procuring substitute services;</li>
+      <li>indirect, consequential, incidental, special or punitive damages;</li>
+      <li>acts or omissions of third parties, including the App Store, device manufacturers, operating system providers and internet service providers;</li>
+      <li>any consequence of inaccurate Customer Data entered by you;</li>
+      <li>use of the App contrary to this Agreement or to its documentation;</li>
+      <li>your failure to comply with data protection or other legal obligations applicable to you.</li>
+    </ol>
+    <p><span class="clause-num">14.2.</span> <strong>AGGREGATE CAP.</strong> The Licensor's total aggregate liability arising out of or in connection with this Agreement, on any basis, shall not exceed the greater of (i) the total amount you paid for the Premium Subscription during the twelve (12) months preceding the event giving rise to the claim, or (ii) <strong>EUR 50</strong>.</p>
+    <p><span class="clause-num">14.3.</span> This Clause does not limit liability for death or personal injury caused by negligence, for fraud or fraudulent misrepresentation, for wilful misconduct or gross negligence, or for any other liability that cannot be limited under mandatory law.</p>
+    <p><span class="clause-num">14.4.</span> You acknowledge that the limitations in this Clause reflect the allocation of risk between the parties and that the App would not be offered on these commercial terms without them.</p>
+  </section>
+
+  <!-- 15 -->
+  <section>
+    <h2>15. Indemnity</h2>
+    <p><span class="clause-num">15.1.</span> You shall indemnify and hold the Licensor harmless from and against all claims, proceedings, penalties, costs and damages (including reasonable legal fees) arising from:</p>
+    <ol class="sub-item">
+      <li>your breach of this Agreement;</li>
+      <li>your processing of personal data, including any breach of the GDPR or equivalent law;</li>
+      <li>Customer Data;</li>
+      <li>your use of the App in violation of applicable law.</li>
+    </ol>
+  </section>
+
+  <!-- 16 -->
+  <section>
+    <h2>16. Term and Termination</h2>
+    <p><span class="clause-num">16.1.</span> This Agreement takes effect upon installation or first use of the App and continues until terminated.</p>
+    <p><span class="clause-num">16.2.</span> You may terminate at any time by ceasing use and removing the App from all your Devices. Termination does not relieve you of the obligation to pay amounts already due.</p>
+    <p><span class="clause-num">16.3.</span> We may suspend or terminate this Agreement, with prior warning where practicable, if:</p>
+    <ol class="sub-item">
+      <li>you materially breach this Agreement;</li>
+      <li>you use the App unlawfully or to the detriment of third parties;</li>
+      <li>you attempt to circumvent security or subscription mechanisms;</li>
+      <li>we permanently discontinue the App.</li>
+    </ol>
+    <p><span class="clause-num">16.4.</span> If we permanently discontinue the App, we will give at least 60 days' notice, and any unused portion of a prepaid subscription will be refunded on a pro rata basis. Customer Data remains on your Device and is unaffected by discontinuation.</p>
+    <p><span class="clause-num">16.5.</span> Upon termination the licence in Clause 4 ends and you must cease use and remove the App. Clauses 7, 8, 11, 13, 14, 15, 17 and 18 survive termination.</p>
+  </section>
+
+  <!-- 17 -->
+  <section>
+    <h2>17. Changes to This Agreement</h2>
+    <p><span class="clause-num">17.1.</span> We may amend this Agreement to reflect changes in law, technology or the scope of the App.</p>
+    <p><span class="clause-num">17.2.</span> We will notify you of material changes through an in-App notice or by e-mail at least 15 days before they take effect.</p>
+    <p><span class="clause-num">17.3.</span> Continued use of the App after the changes take effect constitutes acceptance. If you do not accept the changes, you must stop using the App and may cancel your subscription.</p>
+  </section>
+
+  <!-- 18 -->
+  <section>
+    <h2>18. General</h2>
+    <p><span class="clause-num">18.1.</span> <strong>GOVERNING LAW.</strong> This Agreement is governed by the laws of the Republic of Serbia, excluding its conflict of law rules and excluding the United Nations Convention on Contracts for the International Sale of Goods.</p>
+    <p><span class="clause-num">18.2.</span> <strong>DISPUTES.</strong> The parties shall seek to resolve disputes amicably. Failing agreement, the competent courts of <strong>Pančevo</strong>, Republic of Serbia shall have jurisdiction. Nothing in this Clause deprives you of the protection of mandatory provisions of the law of your country of habitual residence where such protection cannot be derogated from by agreement.</p>
+    <p><span class="clause-num">18.3.</span> <strong>APP STORE.</strong> This Agreement is concluded solely between you and the Licensor. The App Store is not a party to it and is not responsible for the App or its content. The Licensor alone is responsible for the App, its maintenance, support and any product liability claims.</p>
+    <p><span class="clause-num">18.4.</span> <strong>EXPORT AND SANCTIONS.</strong> You represent that you are not located in, and will not use the App in, any country or territory subject to comprehensive trade sanctions, and that you are not listed on any applicable restricted party list.</p>
+    <p><span class="clause-num">18.5.</span> <strong>ASSIGNMENT.</strong> You may not assign this Agreement without our prior written consent. We may assign it in connection with a merger, acquisition, reorganisation or sale of assets, on notice to you.</p>
+    <p><span class="clause-num">18.6.</span> <strong>FORCE MAJEURE.</strong> We are not liable for failure to perform due to circumstances beyond our reasonable control, including natural disasters, war, telecommunications failures, cyber attacks and acts of public authorities.</p>
+    <p><span class="clause-num">18.7.</span> <strong>SEVERABILITY.</strong> If any provision is held invalid or unenforceable, the remainder continues in force and the invalid provision shall be replaced by a valid provision closest to the parties' original intent.</p>
+    <p><span class="clause-num">18.8.</span> <strong>WAIVER.</strong> Failure to enforce any right does not constitute a waiver of that right.</p>
+    <p><span class="clause-num">18.9.</span> <strong>ENTIRE AGREEMENT.</strong> This Agreement, together with the Privacy Policy, constitutes the entire agreement between the parties regarding the App and supersedes all prior arrangements and representations.</p>
+    <p><span class="clause-num">18.10.</span> <strong>LANGUAGE.</strong> This Agreement is concluded in the English language. Any translation is provided for convenience only. In the event of any inconsistency, the English version prevails, except where mandatory local law requires otherwise.</p>
+  </section>
+
+  <!-- 19 -->
+  <section>
+    <h2>19. Contact</h2>
+    <div class="contact-box">
+      <p><strong>Branislav Krstić</strong></p>
+      <p>E-mail: <a href="mailto:servisbook.studio@gmail.com">servisbook.studio@gmail.com</a></p>
+      <p>Address: Ulica Ljubomira Kovačevića 012, Pančevo, Republic of Serbia</p>
+      <p>Support hours: Mon–Fri 09:00–17:00 CET</p>
+      <p style="margin-top:10px;font-size:13px;color:var(--muted)">We respond to complaints within 15 days of receipt.</p>
+    </div>
+    <p style="margin-top:16px;font-size:13px;color:var(--muted)">By accepting these terms you confirm that you have read and understood them and agree to be bound by them.</p>
+  </section>
+
+</article>
+
+</body></html>
